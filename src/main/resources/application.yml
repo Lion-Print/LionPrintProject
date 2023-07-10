@@ -1,0 +1,11 @@
+
+server:
+  port: ${SERVER_PORT:8008}
+  shutdown: graceful
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILE:dev}
+
+  main:
+    allow-bean-definition-overriding: true
